@@ -1,0 +1,45 @@
+*,
+*::before,
+*::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: inherit;
+}
+
+html {
+    box-sizing: border-box;
+    font-size: 100%;
+    font-family: sans-serif;
+    font-weight: 400;
+}
+
+.container {
+    height: 100vh;
+
+    display: flex;
+    flex-direction: column;
+}
+
+.toolbar {
+    background-color: orangered;
+    padding: .75rem 0;
+
+    display: flex;
+    justify-content: flex-start;
+}
+
+.toolbar > * {
+    margin: 0 1rem;
+}
+
+#game-area {
+    margin:10px;
+    padding:0px;
+    height: 1fr;
+    background-color: #00ff11;
+
+    flex: 1;
+}    
+
+#game-area:focus { outline: none; }
+

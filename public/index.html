@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" type="text/css" href="style.css">
+
+    <title>Snake Game</title>
+</head>
+<body>
+    <div class="container">
+        <div class="toolbar">
+            <div>
+                <span>Mode: </span>
+                <select name="difficulty" id="select-mode">
+                    <option value="100" selected>Easy</option>
+                    <option value="75">Medium</option>
+                    <option value="50">Hard</option>
+                </select>
+            </div>
+            <button class="fullscreen-toggle">Full Screen</button><br>
+        </div>
+        <div id="game-area" tabindex="0"></div>
+    </div>
+    
+    <!--Script Section-->
+    <script type="text/javascript" src="snake.js"></script>
+</body>
+</html>
